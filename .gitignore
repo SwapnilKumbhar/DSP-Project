@@ -1,0 +1,6 @@
+# Virtual ENV
+dsp/
+
+# Test music files
+*.mp3
+*.wav
