@@ -4,3 +4,6 @@ dsp/
 # Test music files
 *.mp3
 *.wav
+
+# Python Cache
+__pycache__/
