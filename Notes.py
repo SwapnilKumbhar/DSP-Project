@@ -1,3 +1,5 @@
+import math
+
 class Notes:
     TONE = 220
     NOTES = []
@@ -20,3 +22,6 @@ class Notes:
             return self.normalize(note/2)
         else:
             return note
+
+    def getStep(self,fnew,fold):
+        return 12*math.log(fnew/fold,2)
