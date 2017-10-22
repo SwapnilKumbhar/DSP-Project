@@ -7,3 +7,9 @@ dsp/
 
 # Python Cache
 __pycache__/
+
+# Test file
+test.py
+
+# vim swap files
+*.swp
