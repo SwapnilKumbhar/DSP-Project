@@ -41,7 +41,6 @@ class Autotune:
         yD = librosa.stft(y,n_fft=self.INPUT_SR)
         arr = np.argmax(yD,axis=0)
         fq = np.mean(arr)
-        print(fq)
 
         return self._note.normalize(fq)
     
