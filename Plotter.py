@@ -1,3 +1,4 @@
+import librosa
 import librosa.display as disp
 import matplotlib.pyplot as plt
 
@@ -40,6 +41,8 @@ class Plotter:
         plt.subplot(326)
         plt.title('Output Chromatograph')
         self.plotChroma(self.INPUT_WAVE,self.INPUT_SR) 
+
+        plt.show()
 
         return
 
