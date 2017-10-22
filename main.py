@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import IO,Auto
 import Plotter
 import sys
