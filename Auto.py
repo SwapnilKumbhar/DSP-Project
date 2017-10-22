@@ -14,6 +14,8 @@ class Autotune:
 
     def correct(self):
         step = int(self.INPUT_SR/20)
+        print('Detected fq\tCorrected fq\tCorrection factor')
+        print('--------------------------------------------')
         for x in range(0,len(self.INPUT_WAVE),step):
             # find STFT
             # Match to closest frequency
@@ -32,6 +34,7 @@ class Autotune:
             self.OUTPUT_WAVE[x:x+step] = self._transpose(y, f, self.NOTES[note])
             #self.OUTPUT_WAVE = np.concatenate(self.OUTPUT_WAVE,self._transpose(y, f, self.NOTES[note]))
 
+        print('-------------------------------------------')
         return librosa.util.normalize(self.OUTPUT_WAVE)
     
     def _findStft(self,y):

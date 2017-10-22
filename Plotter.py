@@ -24,7 +24,7 @@ class Plotter:
 
         plt.subplot(322)
         plt.title('Output Waveform')
-        self.plotWave(self.INPUT_WAVE,self.INPUT_SR)
+        self.plotWave(self.OUTPUT_WAVE,self.OUTPUT_SR)
 
         plt.subplot(323)
         plt.title('Input Power Spectrogram')
@@ -32,7 +32,7 @@ class Plotter:
         
         plt.subplot(324)
         plt.title('Output Power Spectrogram')
-        self.plotSpec(self.INPUT_WAVE,self.INPUT_SR) 
+        self.plotSpec(self.OUTPUT_WAVE,self.OUTPUT_SR) 
 
         plt.subplot(325)
         plt.title('Input Chromatograph')
@@ -40,7 +40,7 @@ class Plotter:
 
         plt.subplot(326)
         plt.title('Output Chromatograph')
-        self.plotChroma(self.INPUT_WAVE,self.INPUT_SR) 
+        self.plotChroma(self.OUTPUT_WAVE,self.OUTPUT_SR) 
 
         plt.show()
 
