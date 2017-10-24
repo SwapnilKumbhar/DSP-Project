@@ -30,11 +30,6 @@ def start(ip,op,scale):
     yT = auto.correct()
     print('Pitch Correction Completed.')
 
-    input('Enter any key to view output Plots.')
-    print('Calculating Plots...')
-    plt = Plotter.Plotter(y,sr,yT,sr)
-    plt.plot()
-
     print('Dumping output to %s...'%op,end='')
     io.dump(op,yT,sr)
     print('Done.')
