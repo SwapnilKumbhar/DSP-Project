@@ -31,7 +31,7 @@ class Autotune:
             print(f,end='\t')
             print(self.NOTES[note],end='\t')
 
-            self.OUTPUT_WAVE[x:x+step] = self._transpose(y, f, self.NOTES[note])
+            self.OUTPUT_WAVE[x:x+step] = self._transpose(y, f, 440)
             #self.OUTPUT_WAVE = np.concatenate(self.OUTPUT_WAVE,self._transpose(y, f, self.NOTES[note]))
 
         print('-------------------------------------------')
